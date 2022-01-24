@@ -4,9 +4,9 @@ def esBinario(strbinario):
         if digito != '0' and digito != '1':
             var = 0
     if (var == 0):
-        return("False")
+        return('False')
     else:
-        return("True")
+        return('True')
 
 def binarioDecimal(strbinario):
     if esBinario(strbinario) == 'True':
@@ -19,6 +19,6 @@ print(esBinario("1001"))
 
 print(esBinario("Hola"))
 
-print(binarioDecimal("1001"))
+print(binarioDecimal("111"))
 
 print(binarioDecimal("Hola"))
