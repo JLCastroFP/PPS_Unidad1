@@ -10,13 +10,13 @@ class binarioTest(unittest.TestCase):
     
     def test_value(self):
         self.assertTrue(esBinario("1001"))
-        self.assertEqual(esBinario("123"), 'False')
+        self.assertFalse(esBinario("123"))
     
     def test_letter(self):
-        self.assertEqual(esBinario("Hola"), 'False')
+        self.assertFalse(esBinario("Hola"))
     
     def test_negative(self):
-        self.assertEqual(esBinario("-1001"), 'False')
+        self.assertFalse(esBinario("-1001"))
 
     def test_convert(self):
         self.assertEqual(binarioDecimal("111"), 7)

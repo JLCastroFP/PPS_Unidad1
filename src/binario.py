@@ -4,12 +4,12 @@ def esBinario(strbinario):
         if digito != '0' and digito != '1':
             var = 0
     if (var == 0):
-        return('False')
+        return False
     else:
-        return('True')
+        return True
 
 def binarioDecimal(strbinario):
-    if esBinario(strbinario) == 'True':
+    if esBinario(strbinario) == True:
         return(int(strbinario, 2))
     else:
         return("El número no es binario")
